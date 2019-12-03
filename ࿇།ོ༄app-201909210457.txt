@@ -1,0 +1,151 @@
+04:57:52.790 [INFO][14849.AppDelegate.application] App version: 2.0.9 (1906101600)
+04:57:52.801 [INFO][14849.AppDelegate.application] Locale: en_SE
+04:57:52.844 [INFO][14849.WarpManager.updateWarp] 
+04:57:52.877 [INFO][14849.WarpManager.setupWarp] 
+04:57:52.905 [INFO][14849.WarpApi.logKeys] Using stored keys - public_key: AS1BeCW9lbFcHJiakmMGxCaZBSxBjHBmkHjNKNt8SX8=, registration_id: 9c66a0fe-9e16-4eda-92ed-dd2525228cd4, token: 56ce9ee4-27a8-4720-b7bb-df4ea6e7922f
+04:57:52.928 [INFO][14849.WarpApi.register] Reading keychain configuration
+04:57:52.929 [ERROR][14849.Keychain.get] Read keychain item *referrer* failed: The specified item could not be found in the keychain. (code -25300)
+04:57:52.931 [INFO][14849.WarpApi.register] Fetching installation ID
+04:57:52.933 [INFO][14849.WarpManager.checkWarpCredentials] registration ID, auth token and public key are set. User is registered.
+04:57:53.057 [INFO][14849.WarpApi.register] Preparing request
+04:57:53.061 [INFO][14849.WarpApi.logRequest] REQUEST: PUT https://api.cloudflareclient.com/v0i1906101600/reg/9c66a0fe-9e16-4eda-92ed-dd2525228cd4 - Headers: Content-Type=application/json, Authorization=**** - Payload: {"install_id":"eihrSDljYYQ","key":"AS1BeCW9lbFcHJiakmMGxCaZBSxBjHBmkHjNKNt8SX8=","fcm_token":"eihrSDljYYQ:APA91bHPoOFEY9BzLtrADeSSJz50YgemRIVY86iQRk7214r_AeJxJ3JS1vBjMsTMnoRnsDCap9P0sFbL83_p-Wsvt3zcBUwZcEKPSB7wAT7C2Ibcwn4nB1en84UcUYLw1yENDvX1r534","type":"ios"}
+04:57:53.062 [INFO][14849.NotificationsManager.messaging] FCM token eihrSDljYYQ:APA91bHPoOFEY9BzLtrADeSSJz50YgemRIVY86iQRk7214r_AeJxJ3JS1vBjMsTMnoRnsDCap9P0sFbL83_p-Wsvt3zcBUwZcEKPSB7wAT7C2Ibcwn4nB1en84UcUYLw1yENDvX1r534
+04:57:53.116 [INFO][14849.WarpManager.getWarpConfiguration] 
+04:57:53.199 [INFO][14849.WarpApi.logRequest] REQUEST: GET https://api.cloudflareclient.com/v0i1906101600/reg/9c66a0fe-9e16-4eda-92ed-dd2525228cd4/queue - Headers: Authorization=**** - Payload: 
+04:57:53.326 [ERROR][14849.ResolveDomainsOperation.execute] 4c1335c5-66c9-4527-b350-48dfa628743e.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:57:53.557 [ERROR][14849.ResolveDomainsOperation.execute] 1119a35e-bebd-4b45-a57f-9de7d1e487f3.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:57:53.762 [ERROR][14849.ResolveDomainsOperation.execute] 350d8f37-eaea-4242-9ba5-ddfe9b37e65e.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:57:53.806 [INFO][14849.WarpApi.logResponse] RESPONSE: https://api.cloudflareclient.com/v0i1906101600/reg/9c66a0fe-9e16-4eda-92ed-dd2525228cd4/queue - Status code: 200 - Headers: Content-Encoding=gzip, Content-Type=application/json; charset=utf-8, expect-ct=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", cf-ray=5198c6336c7e3cf3-CPH, Server=cloudflare, Date=Sat, 21 Sep 2019 02:57:53 GMT, Vary=Accept-Encoding - Payload: {"result":{"place":1761863},"success":true,"errors":[],"messages":[]}
+
+04:57:54.382 [INFO][14849.WarpApi.logResponse] RESPONSE: https://api.cloudflareclient.com/v0i1906101600/reg/9c66a0fe-9e16-4eda-92ed-dd2525228cd4 - Status code: 200 - Headers: Server=cloudflare, Content-Type=application/json; charset=utf-8, Content-Encoding=gzip, Date=Sat, 21 Sep 2019 02:57:54 GMT, cf-ray=5198c6333c7b3cf3-CPH, expect-ct=max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Vary=Accept-Encoding - Payload: {"result":{"id":"9c66a0fe-9e16-4eda-92ed-dd2525228cd4","type":"ios","name":"","key":"AS1BeCW9lbFcHJiakmMGxCaZBSxBjHBmkHjNKNt8SX8=","config":{"client_id":"Fxh2","peers":[{"public_key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","endpoint":{"v4":"162.159.192.1:2408","v6":"[2606:4700:d0::a29f:c001]:2408","host":"engage.cloudflareclient.com:2408"}}],"interface":{"addresses":{"v4":"172.16.0.2","v6":"fd01:5ca1:ab1e:88da:7b71:2f2b:a768:51f2"}},"services":{"http_proxy":"172.16.0.1:2480"}},"warp_enabled":false,"waitlist_enabled":true,"created":"2019-08-15T06:16:20.172386Z","updated":"2019-09-21T02:57:53.673528382Z","locale":"en-US","enabled":true,"install_id":"eihrSDljYYQ","fcm_token":"eihrSDljYYQ:APA91bHPoOFEY9BzLtrADeSSJz50YgemRIVY86iQRk7214r_AeJxJ3JS1vBjMsTMnoRnsDCap9P0sFbL83_p-Wsvt3zcBUwZcEKPSB7wAT7C2Ibcwn4nB1en84UcUYLw1yENDvX1r534","device_token":"71a5bd7af14983d8530ebe3ae1a9eaeb5f73823e9fcd1193108ba1dc0d3b5f39"},"success":true,"errors":[],"messages":[]}
+
+04:57:54.401 [INFO][14849.WarpApi.logKeys] Using stored keys - public_key: AS1BeCW9lbFcHJiakmMGxCaZBSxBjHBmkHjNKNt8SX8=, registration_id: 9c66a0fe-9e16-4eda-92ed-dd2525228cd4, token: 56ce9ee4-27a8-4720-b7bb-df4ea6e7922f
+04:57:56.166 [INFO][14849.DetectCaptivePortalOperation.execute] 
+04:58:01.171 [ERROR][14849.DetectCaptivePortalOperation.detectCaptivePortalWithHttps] https://cp.cloudflare.com: The request timed out. (code -1001) (user info ["_kCFStreamErrorDomainKey": 4, "NSErrorFailingURLKey": https://cp.cloudflare.com/, "NSErrorFailingURLStringKey": https://cp.cloudflare.com/, "NSLocalizedDescription": The request timed out., "_kCFStreamErrorCodeKey": -2103])
+04:58:02.296 [INFO][14849.DetectCaptivePortalOperation.detectCaptivePortalWithoutHttps] response code from http://cp.cloudflare.com: 204
+04:58:02.308 [INFO][14849.DetectCaptivePortalOperation.finish] Status: No captive portal
+04:58:02.513 [ERROR][14849.ResolveDomainsOperation.execute] bddd05b6-93a3-46fa-a2e1-9346ad384abb.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:02.725 [ERROR][14849.ResolveDomainsOperation.execute] 535a90c6-3a36-4810-8bba-5a96f7bb25ec.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:02.936 [ERROR][14849.ResolveDomainsOperation.execute] fde1444b-df8f-45ab-8569-6d06046bc586.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:05.159 [ERROR][14849.ResolveDomainsOperation.execute] 845c1a1c-c592-433b-84b4-4b17b6cdfee1.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:05.374 [ERROR][14849.ResolveDomainsOperation.execute] 428d83f7-e1ac-4d95-87b9-4546c60bc5ba.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:05.585 [ERROR][14849.ResolveDomainsOperation.execute] df3ca76a-66f5-4095-8366-9225d0659686.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:07.808 [ERROR][14849.ResolveDomainsOperation.execute] 039640ef-a8d5-4084-8804-9ee477a612e2.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:08.042 [ERROR][14849.ResolveDomainsOperation.execute] 51e3e4ee-f9ae-41d7-9457-fc910846f0f6.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:08.248 [ERROR][14849.ResolveDomainsOperation.execute] bb09c1be-d360-43cc-a3ed-e98ca8088cf5.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:10.476 [ERROR][14849.ResolveDomainsOperation.execute] ca96a211-69a2-4db4-8454-571d6c5687d8.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:10.685 [ERROR][14849.ResolveDomainsOperation.execute] beddcade-4fb8-467c-8697-e0906b5d96c9.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:10.905 [ERROR][14849.ResolveDomainsOperation.execute] 06e8e2ac-7367-44a3-befc-5ea490163805.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:13.125 [ERROR][14849.ResolveDomainsOperation.execute] 849dbd83-ebfc-42c2-902d-31ce7fe39e7b.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:13.342 [ERROR][14849.ResolveDomainsOperation.execute] 5a96ba19-0d3d-4bb5-b0a4-1869f99f55e5.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:13.559 [ERROR][14849.ResolveDomainsOperation.execute] 02b428bc-f446-43c1-baa1-9b817649a912.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:15.790 [ERROR][14849.ResolveDomainsOperation.execute] 9cf4b1c9-1fdc-405d-8c30-3b739966252e.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:16.007 [ERROR][14849.ResolveDomainsOperation.execute] 33b05439-554c-4ff3-b006-55c04a28b4e4.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:16.224 [ERROR][14849.ResolveDomainsOperation.execute] f490606f-a67b-4428-9775-5792ac1ffc03.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:16.770 [INFO][14849.ConnectionOptionsViewModel.saveSettings] Trusted Networks didn't change; current set: ["192.168.255.249", "192.168.1.1", "192.0.2.2", "comhemDBE1E7", "1.0.0.1", "8.26.56.26", "192.168.1.89", "10.6.9.1", "192.168.1.147", "185.159.157.19", "100.91.124.98", "8.8.8.8", "80.251.201.177", "192.168.1.25", "R2D2-AI-✨🕯🔥✨.n001", "185.159.157.20"], new set: ["185.159.157.20", "185.159.157.19", "192.168.1.1", "comhemDBE1E7", "10.6.9.1", "8.8.8.8", "192.168.1.89", "192.168.1.25", "1.0.0.1", "8.26.56.26", "100.91.124.98", "80.251.201.177", "192.0.2.2", "R2D2-AI-✨🕯🔥✨.n001", "192.168.255.249", "192.168.1.147"]
+04:58:18.472 [ERROR][14849.ResolveDomainsOperation.execute] 66ecfee8-2138-4a68-816f-03e5639a54f9.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:18.688 [ERROR][14849.ResolveDomainsOperation.execute] e6c9ebe9-480d-4d04-9f9d-12aa5be7a929.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:18.904 [ERROR][14849.ResolveDomainsOperation.execute] 28899888-9ab4-47a7-9a17-6fbb02628b97.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:21.125 [ERROR][14849.ResolveDomainsOperation.execute] 65683caf-6328-4d4f-9693-1d588ed88518.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:21.344 [ERROR][14849.ResolveDomainsOperation.execute] eb11dad1-f473-4687-bfc6-d8d554e4ceeb.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:21.555 [ERROR][14849.ResolveDomainsOperation.execute] a7ef4ce3-89f8-439f-811e-ce7b9881c3da.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:23.779 [ERROR][14849.ResolveDomainsOperation.execute] bf76444e-2411-479e-9878-e419de08fcb3.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:23.992 [ERROR][14849.ResolveDomainsOperation.execute] 0f40402e-a1cd-41ab-b2c5-f67f5c5dc483.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:24.209 [ERROR][14849.ResolveDomainsOperation.execute] 98b71526-0094-4340-9545-e2d3a80c1bb2.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:26.434 [ERROR][14849.ResolveDomainsOperation.execute] b3b6907e-88fe-4f28-9055-f82bbfe255d6.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:26.653 [ERROR][14849.ResolveDomainsOperation.execute] dfce3c4e-5b76-4990-a385-e4bbefe3be6d.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:26.879 [ERROR][14849.ResolveDomainsOperation.execute] d53c9d96-f202-418b-902b-8906c7f74015.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:29.098 [ERROR][14849.ResolveDomainsOperation.execute] 35609c37-a32a-429b-9a05-6c7ee5822fcd.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:29.307 [ERROR][14849.ResolveDomainsOperation.execute] 690a1692-efbf-404e-860f-5ab6622f937b.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:29.520 [ERROR][14849.ResolveDomainsOperation.execute] 05285276-3023-49ba-b875-6948f07c0cd4.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:31.753 [ERROR][14849.ResolveDomainsOperation.execute] a3fa8ce7-2a1a-4e39-ac45-bc9273233667.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:31.963 [ERROR][14849.ResolveDomainsOperation.execute] e76095d1-965e-4bcc-8fe7-10edd6313378.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:32.182 [ERROR][14849.ResolveDomainsOperation.execute] 593db830-bb05-47dd-871b-a9017821d7b8.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:34.401 [ERROR][14849.ResolveDomainsOperation.execute] 71389b2e-36f4-4461-8849-35f04e01f1b3.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:34.619 [ERROR][14849.ResolveDomainsOperation.execute] fa2e32e0-de44-4fd6-aa7c-916144a98f05.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:34.831 [ERROR][14849.ResolveDomainsOperation.execute] bb33250b-e058-4cd2-baf0-8c2ad9e1f80b.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:37.054 [ERROR][14849.ResolveDomainsOperation.execute] ca082a44-6a8b-4b89-82d7-d6503ff99748.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:37.264 [ERROR][14849.ResolveDomainsOperation.execute] c3ae1653-7308-4410-993d-f4ea4a7d66b7.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:37.482 [ERROR][14849.ResolveDomainsOperation.execute] 7e609c9f-2c46-4b01-91d5-5ae2c0017402.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:39.705 [ERROR][14849.ResolveDomainsOperation.execute] f6210b0b-ecd4-449f-8a98-6ff98d2ffc8c.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:39.920 [ERROR][14849.ResolveDomainsOperation.execute] 01eedfa7-7c81-4808-a67d-ed6a2aafbf8c.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:40.139 [ERROR][14849.ResolveDomainsOperation.execute] 7bd455fb-71eb-41e6-9361-e866fcb71db4.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:42.366 [ERROR][14849.ResolveDomainsOperation.execute] de9baa1e-b361-4a33-adcf-f1cf82ab423d.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:42.579 [ERROR][14849.ResolveDomainsOperation.execute] e71359a0-8d05-4f12-a079-9fa38a85e25e.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:42.799 [ERROR][14849.ResolveDomainsOperation.execute] d2724262-cb94-4b67-84c3-64e522b7393e.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:45.022 [ERROR][14849.ResolveDomainsOperation.execute] fc43dae1-d625-4561-929e-92965b62a836.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:45.238 [ERROR][14849.ResolveDomainsOperation.execute] 698dc92f-8bf2-48d7-b76d-ac1b38d50b74.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:45.449 [ERROR][14849.ResolveDomainsOperation.execute] 6d8c5ffd-2e1a-4a80-abcf-a4cff2f1a70d.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:47.676 [ERROR][14849.ResolveDomainsOperation.execute] 31acfbb2-7b96-441f-bfa0-0e796f2e46ef.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:47.894 [ERROR][14849.ResolveDomainsOperation.execute] 134c827e-e041-446b-b80f-bd18a7c92ded.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:48.149 [ERROR][14849.ResolveDomainsOperation.execute] 234bb78a-2110-4a73-8a7b-a24d9b6ee105.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:50.332 [ERROR][14849.ResolveDomainsOperation.execute] f3380908-cfa4-4db5-bf99-bb4143c4f77e.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:50.553 [ERROR][14849.ResolveDomainsOperation.execute] 03da0693-27ce-44d4-8cf1-b88cc086f05a.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:50.774 [ERROR][14849.ResolveDomainsOperation.execute] 8bdf724a-4a1d-472c-b6c1-f45752439899.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:53.004 [ERROR][14849.ResolveDomainsOperation.execute] 32c5fd5b-d1db-4b8e-ab12-7f3a8a9c645a.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:53.225 [ERROR][14849.ResolveDomainsOperation.execute] 74d4d275-33f7-4b60-b9dc-4a17a0dcb0ed.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:53.439 [ERROR][14849.ResolveDomainsOperation.execute] 37022540-ff2c-4472-889c-f00be85f2a98.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:55.660 [ERROR][14849.ResolveDomainsOperation.execute] 13fce59a-c37d-4a51-b7da-150a25bbb708.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:55.882 [ERROR][14849.ResolveDomainsOperation.execute] 72c525da-3f48-4e66-b0ed-e55ba3c360d9.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:56.101 [ERROR][14849.ResolveDomainsOperation.execute] 4ccba424-cf1f-4184-a8e4-be412fcf3c3b.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:58.330 [ERROR][14849.ResolveDomainsOperation.execute] 39cba400-cc8c-49e2-a57c-6d0d18b5a7a3.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:58.553 [ERROR][14849.ResolveDomainsOperation.execute] d0c20bf9-4a9b-49e2-9d55-1c75f1e72e21.is-dot.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:58:58.769 [ERROR][14849.ResolveDomainsOperation.execute] 91e322af-2718-4546-84ce-24e847ea6dbe.is-cf.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:59:01.229 [ERROR][14849.ResolveDomainsOperation.execute] 6071deca-56e1-4fb6-b18d-1a5f2cf26152.is-doh.cloudflareresolve.com: hostname nor servname provided, or not known (code 7)
+04:59:22.443 [INFO][14849.TunnelManager.updateOnDemandRules] active rules: [
+    action = disconnect
+    interfaceTypeMatch = any
+    SSIDMatch = (
+        R2D2-AI-✨🕯🔥✨.n001,
+        192.168.255.249,
+        192.0.2.2,
+        100.91.124.98,
+        192.168.1.89,
+        185.159.157.20,
+        10.6.9.1,
+        192.168.1.147,
+        8.8.8.8,
+        80.251.201.177,
+        192.168.1.1,
+        1.0.0.1,
+        8.26.56.26,
+        185.159.157.19,
+        192.168.1.147,
+        comhemDBE1E7,
+        192.168.1.25,
+        #Telia-523150,
+        0.0.0.0,
+    ), 
+    action = connect
+    interfaceTypeMatch = WiFi, 
+    action = connect
+    interfaceTypeMatch = cellular]
+04:59:22.635 [INFO][14849.ConnectionOptionsViewModel.saveSettings] Trusted Networks added: #Telia-523150,0.0.0.0
+04:59:29.980 [INFO][14849.TunnelManager.updateOnDemandRules] active rules: [
+    action = disconnect
+    interfaceTypeMatch = any
+    SSIDMatch = (
+        R2D2-AI-✨🕯🔥✨.n001,
+        192.168.255.249,
+        192.0.2.2,
+        100.91.124.98,
+        192.168.1.89,
+        185.159.157.20,
+        10.6.9.1,
+        192.168.1.147,
+        8.8.8.8,
+        80.251.201.177,
+        192.168.1.1,
+        1.0.0.1,
+        8.26.56.26,
+        185.159.157.19,
+        192.168.1.147,
+        comhemDBE1E7,
+        192.168.1.25,
+        #Telia-523150,
+        0.0.0.0,
+    ), 
+    action = connect
+    interfaceTypeMatch = cellular]
+04:59:42.393 [INFO][14849.ConnectionOptionsViewModel.saveSettings] Trusted Networks didn't change; current set: ["8.26.56.26", "8.8.8.8", "80.251.201.177", "192.168.1.1", "192.168.1.89", "192.0.2.2", "185.159.157.20", "100.91.124.98", "10.6.9.1", "1.0.0.1", "192.168.1.147", "185.159.157.19", "192.168.255.249", "comhemDBE1E7", "0.0.0.0", "R2D2-AI-✨🕯🔥✨.n001", "192.168.1.25", "#Telia-523150"], new set: ["8.8.8.8", "192.168.1.147", "192.168.1.1", "185.159.157.20", "185.159.157.19", "comhemDBE1E7", "8.26.56.26", "192.168.1.89", "0.0.0.0", "192.168.255.249", "100.91.124.98", "80.251.201.177", "192.168.1.25", "R2D2-AI-✨🕯🔥✨.n001", "192.0.2.2", "10.6.9.1", "#Telia-523150", "1.0.0.1"]
+05:00:08.439 [INFO][14849.ConnectionOptionsViewModel.saveSettings] Trusted Networks didn't change; current set: ["10.6.9.1", "100.91.124.98", "185.159.157.19", "0.0.0.0", "192.0.2.2", "192.168.255.249", "comhemDBE1E7", "#Telia-523150", "192.168.1.1", "80.251.201.177", "192.168.1.147", "8.26.56.26", "185.159.157.20", "192.168.1.25", "R2D2-AI-✨🕯🔥✨.n001", "192.168.1.89", "8.8.8.8", "1.0.0.1"], new set: ["#Telia-523150", "8.8.8.8", "192.168.1.1", "185.159.157.20", "10.6.9.1", "100.91.124.98", "185.159.157.19", "192.168.1.25", "192.0.2.2", "192.168.1.89", "1.0.0.1", "R2D2-AI-✨🕯🔥✨.n001", "80.251.201.177", "comhemDBE1E7", "8.26.56.26", "0.0.0.0", "192.168.255.249", "192.168.1.147"]
